@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/workspaces/TrainProject2/module_classify/src/main/res/drawable/class_news_bg.xml" value="0.32314814814814813" />
+        <entry key="..\:/workspaces/TrainProject2/module_classify/src/main/res/layout/class_goods_item_layout.xml" value="0.1546875" />
+        <entry key="..\:/workspaces/TrainProject2/module_classify/src/main/res/layout/class_text_item_layout.xml" value="0.1546875" />
+        <entry key="..\:/workspaces/TrainProject2/module_classify/src/main/res/layout/classify_fragment.xml" value="0.29528985507246375" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/drawable-v24/corner_news_bg.xml" value="0.21822916666666667" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/drawable-v24/home_header_corner_bg.xml" value="0.2935185185185185" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/drawable-v24/ic_diannao.xml" value="0.31296296296296294" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/drawable-v24/ic_jiadian.xml" value="0.31296296296296294" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/drawable/style.xml" value="0.3175925925925926" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_banner_item_layout.xml" value="0.2758152173913043" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_banner_item_two_layout.xml" value="0.307518115942029" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_banner_layout.xml" value="0.2758152173913043" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_banner_two_layout.xml" value="0.307518115942029" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_fragment.xml" value="0.29528985507246375" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_goods_activity_layout.xml" value="0.32019927536231885" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_goods_item_layout.xml" value="0.22395833333333334" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_image_layout.xml" value="0.307518115942029" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_rv_one_item_layout.xml" value="0.307518115942029" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_textbanner_layout.xml" value="0.307518115942029" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/drawable-xhdpi/bg_start.xml" value="0.28703703703703703" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/drawable/main_splash_start.xml" value="0.2962962962962963" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/layout/activity_guide.xml" value="0.2726449275362319" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/layout/activity_main.xml" value="0.21195652173913043" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/layout/activity_splash.xml" value="0.17603850050658562" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/layout/item_custom_view.xml" value="0.3061594202898551" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3055555555555556" />
+        <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3055555555555556" />
+        <entry key="..\:/workspaces/TrainProject2/module_message/src/main/res/layout/message.xml" value="0.29528985507246375" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/drawable/button_style.xml" value="0.3098958333333333" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/drawable/item_bg_style.xml" value="0.296875" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/fragment_mine_layout.xml" value="0.17916666666666667" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_fragment.xml" value="0.29528985507246375" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_logistics_layout.xml" value="0.25" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_rececving_item_layout.xml" value="0.259963768115942" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_receiving_layout.xml" value="0.259963768115942" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/address_style.xml" value="0.28923076923076924" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/btn_style.xml" value="0.3425925925925926" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/button_style.xml" value="0.33425925925925926" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/class_news_bg.xml" value="0.2935185185185185" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/yuan2.xml" value="0.2328125" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/activity_order.xml" value="0.25" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/order_shop_foot_item.xml" value="0.27760416666666665" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/order_shop_item_layout.xml" value="0.19947916666666668" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_address_item_layout.xml" value="0.26992753623188404" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_address_layout.xml" value="0.26992753623188404" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_fragment.xml" value="0.29528985507246375" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_item.xml" value="0.3070652173913043" />
+        <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_myaddress_layout.xml" value="0.21666666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

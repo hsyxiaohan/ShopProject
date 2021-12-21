@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+    <RelativeLayout android:background="@mipmap/bg_me_header"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_img"
+            android:src="@mipmap/bg_me_header"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView android:text="12345"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/fragment_img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"> </TextView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:drawableTop="@mipmap/icon_order_wait_pay"
+            android:text="待付款"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"> </TextView>
+        <TextView
+            android:drawableTop="@mipmap/icon_order_wait_confirm"
+            android:text="待收货"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/mine_Receiving"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"> </TextView>
+        <TextView android:drawableTop="@mipmap/icon_order_completed"
+            android:text="已完成"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"> </TextView>
+        <TextView android:drawableTop="@mipmap/icon_order"
+            android:text="我的订单"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"> </TextView>
+    </LinearLayout>
+
+    <include layout="@layout/fragment_mine_layout"/>
+</LinearLayout>

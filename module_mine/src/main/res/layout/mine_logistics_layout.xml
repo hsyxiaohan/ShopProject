@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:title="物流信息"
+        app:titleTextColor="@color/white"
+        android:background="#03A9F4"
+        android:id="@+id/logistics_toolbar"
+        ></androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/logistics_img"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_below="@id/logistics_toolbar"
+        ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/logistics_img"
+        android:layout_below="@id/logistics_toolbar"
+        android:layout_margin="@dimen/dp_10"
+        ></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logistics_img"
+        android:id="@id/logistics_rv"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

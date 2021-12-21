@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/rv_one_img"
+            ></ImageView>
+        <jp.shts.android.library.TriangleLabelView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            app:backgroundColor="#ff0000"
+            app:primaryText="折扣"
+            app:primaryTextSize="10sp"
+            app:labelTopPadding="10dp"
+            app:labelCenterPadding="0dp"
+            app:labelBottomPadding="5dp"
+            app:corner="rightTop"
+            ></jp.shts.android.library.TriangleLabelView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center"
+        android:text="1234"
+        android:textColor="#ff0000"
+        android:id="@+id/rv_one_title"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_10"
+        android:id="@+id/rv_one_money"
+        android:textColor="#bcbcbc"
+        android:layout_gravity="center"
+        android:text="1234"
+        ></TextView>
+
+
+</LinearLayout>

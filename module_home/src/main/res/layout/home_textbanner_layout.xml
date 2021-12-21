@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/corner_news_bg"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_4"
+    android:layout_height="@dimen/dp_40">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_news"
+        ></ImageView>
+    <com.superluo.textbannerlibrary.TextBannerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_textBannerView"
+        app:setGravity="left"
+        app:setDirection="bottom_to_top"
+        app:setInterval="800"
+        app:setSingleLine="true"
+        app:setTextSize="13dp"
+        app:setTextColor="#939292"
+        ></com.superluo.textbannerlibrary.TextBannerView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bw.trainproject2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/taobao"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/taobao"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" />
+
+</manifest>
