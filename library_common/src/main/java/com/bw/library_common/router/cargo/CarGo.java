@@ -30,22 +30,25 @@ public class CarGo {
     private String pic;
 
     //是否收货
-    @Ignore
-    private boolean isReceiving = false;
+    private boolean isReceiving;
 
     //是否评价
+    private boolean isEvaluate;
+
+
     @Ignore
-    private boolean isEvaluate = false;
-
-
     public CarGo() {
     }
 
 
-    public CarGo(Long id, String title, String pic) {
+
+
+    public CarGo(Long id, String title, String pic, boolean isReceiving, boolean isEvaluate) {
         this.id = id;
         this.title = title;
         this.pic = pic;
+        this.isReceiving = isReceiving;
+        this.isEvaluate = isEvaluate;
     }
 
     public Long getId() {

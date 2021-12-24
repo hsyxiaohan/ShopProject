@@ -84,7 +84,7 @@ public class OrderActivity extends BaseActivity {
                     if (TextUtils.equals(resultStatus, "9000")) {
                         // 该笔订单是否真实支付成功，需要依赖服务端的异步通知。
                         for (int i = 0; i < shopList.size(); i++) {
-                            carGoDao.insertData(new CarGo(null,shopList.get(i).getTitle(),shopList.get(i).getPic()));
+                            carGoDao.insertData(new CarGo(null,shopList.get(i).getTitle(),shopList.get(i).getPic(),false,false));
                         }
                         finish();
                     } else {

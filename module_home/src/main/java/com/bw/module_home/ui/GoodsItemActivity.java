@@ -95,7 +95,7 @@ public class GoodsItemActivity extends BaseActivity
 
 
     @Override
-    public void initData() {
+    public  void initData() {
         Intent intent = getIntent();
         String pic = intent.getStringExtra("pic");
         String text = intent.getStringExtra("text");
@@ -117,7 +117,6 @@ public class GoodsItemActivity extends BaseActivity
                 builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        LoggerUtils.i("6666");
                         new Thread(new Runnable() {
                             @Override
                             public void run() {

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:id="@+id/mine_evaluate_toolbar"
+        app:title="评价页面"
+        android:background="#03A9F4"
+        app:titleTextColor="@color/white"
+        ></androidx.appcompat.widget.Toolbar>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:tl_textSelectColor="#FFBF00"
+        app:tl_textUnselectColor="#8A8484"
+        app:tl_tab_space_equal="true"
+        app:tl_indicator_color="#FFBF00"
+        android:id="@+id/mine_evaluate_tl"
+        ></com.flyco.tablayout.SlidingTabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/mine_evaluate_vp"
+        ></androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

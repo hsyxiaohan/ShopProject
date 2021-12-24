@@ -19,6 +19,9 @@ android {
                 arg("AROUTER_MODULE_NAME", project.getName())
             }
         }
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
     }
 
     buildTypes {
@@ -36,11 +39,15 @@ android {
     }
 
 
+
+
 }
 
 dependencies {
 
-    debugImplementation 'com.guolindev.glance:glance:1.1.0'
+
+    implementation project(path: ':library_common')
+//    debugImplementation 'com.guolindev.glance:glance:1.1.0'
 //    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5'
     implementation 'com.alibaba:arouter-api:1.5.2'
     kapt 'com.alibaba:arouter-compiler:1.5.2'
@@ -56,6 +63,7 @@ dependencies {
         implementation project(path: ':module_shopping')
         implementation project(path: ':module_classify')
         implementation project(path: ':module_mine')
+        implementation project(path: ':module_user')
     }
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

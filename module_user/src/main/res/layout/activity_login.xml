@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CBF6DBE5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            ></ImageView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_username"
+        android:background="@drawable/bg_edittext"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#008A00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="用户名"/>
+    <EditText
+        android:id="@+id/login_password"
+        android:background="@drawable/bg_edittext"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#008A00"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="密码"/>
+    <Button
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="登录"
+        android:background="@drawable/button_circle_shape"
+        android:id="@+id/login_btn"
+        ></Button>
+    <Button
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="点击注册"
+        android:background="@drawable/button_circle_shape"
+        android:id="@+id/reg_btn"
+        ></Button>
+
+
+
+
+
+</LinearLayout>

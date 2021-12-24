@@ -23,6 +23,7 @@
             <option value="$PROJECT_DIR$/module_message" />
             <option value="$PROJECT_DIR$/module_mine" />
             <option value="$PROJECT_DIR$/module_shopping" />
+            <option value="$PROJECT_DIR$/module_user" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

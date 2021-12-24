@@ -20,6 +20,7 @@
         <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_goods_activity_layout.xml" value="0.32019927536231885" />
         <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_goods_item_layout.xml" value="0.22395833333333334" />
         <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_image_layout.xml" value="0.307518115942029" />
+        <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_live_layout.xml" value="0.23143115942028986" />
         <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_rv_one_item_layout.xml" value="0.307518115942029" />
         <entry key="..\:/workspaces/TrainProject2/module_home/src/main/res/layout/home_textbanner_layout.xml" value="0.307518115942029" />
         <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/drawable-xhdpi/bg_start.xml" value="0.28703703703703703" />
@@ -30,14 +31,23 @@
         <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/layout/item_custom_view.xml" value="0.3061594202898551" />
         <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3055555555555556" />
         <entry key="..\:/workspaces/TrainProject2/module_main/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3055555555555556" />
+        <entry key="..\:/workspaces/TrainProject2/module_message/src/main/res/drawable/bg_edittext.xml" value="0.3101851851851852" />
         <entry key="..\:/workspaces/TrainProject2/module_message/src/main/res/layout/message.xml" value="0.29528985507246375" />
+        <entry key="..\:/workspaces/TrainProject2/module_message/src/main/res/layout/message_fragment.xml" value="0.17603850050658562" />
         <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/drawable/button_style.xml" value="0.3098958333333333" />
         <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/drawable/item_bg_style.xml" value="0.296875" />
         <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/fragment_mine_layout.xml" value="0.17916666666666667" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/haveevaluation_item_layout.xml" value="0.23697916666666666" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/haveevaluation_layout.xml" value="0.2740036231884058" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_evaluate_layout.xml" value="0.2740036231884058" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_evaluation_layout.xml" value="0.19166666666666668" />
         <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_fragment.xml" value="0.29528985507246375" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_logistics_item_layout.xml" value="0.19166666666666668" />
         <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_logistics_layout.xml" value="0.25" />
         <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_rececving_item_layout.xml" value="0.259963768115942" />
         <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/mine_receiving_layout.xml" value="0.259963768115942" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/noevaluation_item_layout.xml" value="0.26902173913043476" />
+        <entry key="..\:/workspaces/TrainProject2/module_mine/src/main/res/layout/noevaluation_layout.xml" value="0.2740036231884058" />
         <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/address_style.xml" value="0.28923076923076924" />
         <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/btn_style.xml" value="0.3425925925925926" />
         <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/drawable/button_style.xml" value="0.33425925925925926" />
@@ -51,6 +61,10 @@
         <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_fragment.xml" value="0.29528985507246375" />
         <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_item.xml" value="0.3070652173913043" />
         <entry key="..\:/workspaces/TrainProject2/module_shopping/src/main/res/layout/shop_myaddress_layout.xml" value="0.21666666666666667" />
+        <entry key="..\:/workspaces/TrainProject2/module_user/src/main/res/drawable/bg_edittext.xml" value="0.20989583333333334" />
+        <entry key="..\:/workspaces/TrainProject2/module_user/src/main/res/drawable/button_circle_shape.xml" value="0.20989583333333334" />
+        <entry key="..\:/workspaces/TrainProject2/module_user/src/main/res/layout/activity_login.xml" value="0.17916666666666667" />
+        <entry key="..\:/workspaces/TrainProject2/module_user/src/main/res/layout/activity_reg.xml" value="0.23143115942028986" />
       </map>
     </option>
   </component>

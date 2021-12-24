@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:id="@+id/mine_evaluation_toolbar"
+        app:title="评价页面"
+        app:titleTextColor="@color/white"
+        android:background="#03A9F4"
+        ></androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:id="@+id/evaluation_img"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_below="@id/mine_evaluation_toolbar"
+        ></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/evaluation_img"
+        android:layout_below="@id/mine_evaluation_toolbar"
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/logistics_tv"
+        ></TextView>
+    <LinearLayout
+        android:id="@+id/etxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/item_bg_style"
+        android:layout_below="@id/evaluation_img"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="9"
+            android:textSize="@dimen/sp_15"
+            android:hint="说一下对此商品的评价吧"
+            ></EditText>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt"
+        android:layout_below="@id/etxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="店铺评分"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <RatingBar
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:stepSize="1" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:text="提交评价"
+        android:id="@+id/commit_btn"
+        android:background="@drawable/button_style"
+        ></Button>
+
+</RelativeLayout>

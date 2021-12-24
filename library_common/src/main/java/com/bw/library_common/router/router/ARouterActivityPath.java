@@ -28,4 +28,14 @@ class ARouterActivityPath {
 
     }
 
+    /** 登录组件 */
+    public static class Login
+    {
+        private static final String LOGIN = "/login";
+
+        /** 主页 */
+        public static final String PAGER_LOGIN = LOGIN + "/Login";
+
+    }
+
 }

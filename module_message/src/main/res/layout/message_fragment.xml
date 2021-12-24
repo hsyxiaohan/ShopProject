@@ -4,10 +4,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="100dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            ></ImageView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_username"
+        android:background="@drawable/bg_edittext"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#008A00"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="用户名"/>
+    <EditText
+        android:id="@+id/login_password"
+        android:background="@drawable/bg_edittext"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#008A00"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="密码"/>
+    <Button
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="消息页面"
-        ></TextView>
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="登录"
+        android:background="@drawable/button_circle_shape"
+        android:id="@+id/login_btn"
+        ></Button>
 
 </LinearLayout>

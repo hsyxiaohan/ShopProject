@@ -67,11 +67,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></TextView>
 
-            <androidx.recyclerview.widget.RecyclerView
+            <com.bw.library_common.router.widget.MyRecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/home_goods_rv"
-                ></androidx.recyclerview.widget.RecyclerView>
+                ></com.bw.library_common.router.widget.MyRecyclerView>
     </LinearLayout>
 
     </ScrollView>

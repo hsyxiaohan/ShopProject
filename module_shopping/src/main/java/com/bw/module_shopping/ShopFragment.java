@@ -58,9 +58,10 @@ import java.util.Map;
  **/
 @Route(path = ARouterFragmentPath.Shopping.PAGER_SHOP)
 public class ShopFragment extends BaseFragment {
+    private static final String TAG = "Cannot invoke method length() on null object";
     private RecyclerView shopRv;
     private CheckBox shopCheckbox;
-    private TextView shopPrice;
+    private TextView shopPrice; 
     private Button payBtn;
     GoodsDao goodsDao;
     GoodsAdapter goodsAdapter;
@@ -76,6 +77,19 @@ public class ShopFragment extends BaseFragment {
         }
     };
     private Toolbar shopToolbar;
+
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (goodsAdapter != null){
+            all = goodsDao.findAll();
+            goodsAdapter.getData().clear();
+            goodsAdapter.getData().addAll(all);
+            goodsAdapter.notifyDataSetChanged();
+        }
+    }
+
 
 
     @Override
@@ -103,16 +117,6 @@ public class ShopFragment extends BaseFragment {
 
     }
 
-    @Subscribe(sticky = true)
-    public void getEventBus(String index){
-        LoggerUtils.i(index);
-        if (index.equals("111")){
-            all = goodsDao.findAll();
-            goodsAdapter.getData().clear();
-            goodsAdapter.getData().addAll(all);
-            goodsAdapter.notifyDataSetChanged();
-        }
-    }
 
 
 
@@ -237,7 +241,7 @@ public class ShopFragment extends BaseFragment {
                 LoggerUtils.i(111 + "");
                 List<Goods> goodsDaoAll = goodsDao.findAll();
                 List<ShopEntity> shopEntities = new ArrayList<>();
-                for (int i = 0; i < ShopFragment.this.all.size(); i++) {
+                for (int i = 0; i < all.size(); i++) {
                     if (ShopFragment.this.all.get(i).isIschecked()){
                         ShopEntity shopEntity = new ShopEntity(ShopFragment.this.all.get(i).getText(), ShopFragment.this.all.get(i).getPic(), ShopFragment.this.all.get(i).getPrice(), goodsDaoAll.get(i).getCount());
                         shopEntities.add(shopEntity);
@@ -269,6 +273,12 @@ public class ShopFragment extends BaseFragment {
                 shopCheckbox.setChecked(false);
             }
             shopPrice.setText(String.valueOf(0));
+        }
+        if (msg.equals("1111")){
+            all = goodsDao.findAll();
+            goodsAdapter.getData().clear();
+            goodsAdapter.getData().addAll(all);
+            goodsAdapter.notifyDataSetChanged();
         }
     }
 

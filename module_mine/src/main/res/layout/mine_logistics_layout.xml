@@ -26,12 +26,14 @@
         android:layout_toRightOf="@id/logistics_img"
         android:layout_below="@id/logistics_toolbar"
         android:layout_margin="@dimen/dp_10"
+        android:id="@+id/logistics_tv"
         ></TextView>
+
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/logistics_rv"
+        android:background="@drawable/item_bg_style"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/logistics_img"
-        android:id="@id/logistics_rv"
-        ></androidx.recyclerview.widget.RecyclerView>
+        android:layout_below="@id/logistics_img"></androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>

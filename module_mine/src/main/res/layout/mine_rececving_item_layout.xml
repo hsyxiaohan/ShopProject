@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:id="@+id/mine_Receiving_item"
     android:background="@drawable/item_bg_style"
     android:layout_margin="@dimen/dp_5"
     android:layout_height="@dimen/dp_120">

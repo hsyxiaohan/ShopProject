@@ -8,6 +8,7 @@ buildscript {
         flatDir {
             dirs 'libs'
         }
+        maven {url "https://maven.rongcloud.cn/repository/maven-releases/"}
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.3"

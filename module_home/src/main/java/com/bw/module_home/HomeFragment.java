@@ -1,5 +1,6 @@
 package com.bw.module_home;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -14,11 +16,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.bw.library_base.view.BaseFragment;
+import com.bw.library_common.router.router.ARouterActivityPath;
 import com.bw.library_common.router.router.ARouterFragmentPath;
 import com.bw.library_common.router.transformer.AccordionTransformer;
 import com.bw.library_common.router.utils.NetWorkSpeedUtils;
 import com.bw.library_common.router.utils.NetworkUtils;
+import com.bw.library_common.router.utils.SpUtils;
+import com.bw.library_common.router.widget.MyRecyclerView;
 import com.bw.module_home.adapter.BannerAdapter;
 import com.bw.module_home.adapter.BannerTwoAdapter;
 import com.bw.module_home.adapter.GoodsAdapter;
@@ -29,6 +35,7 @@ import com.bw.module_home.contract.GoodsContract;
 import com.bw.module_home.model.GoodsModel;
 import com.bw.module_home.presenter.GoodsPresenter;
 import com.bw.module_home.ui.GoodsItemActivity;
+import com.bw.module_home.ui.LiveActivity;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
@@ -50,7 +57,7 @@ public class HomeFragment extends BaseFragment<GoodsPresenter> implements GoodsC
     private BannerViewPager bannerView;
     List<BannerBean> bannerList;
     private TextBannerView homeTextBannerView;
-    private RecyclerView homeRvOne;
+
     private BannerViewPager bannerViewTwo;
     GoodsAdapter goodsAdapter;
     private int page = 0;
@@ -71,6 +78,8 @@ public class HomeFragment extends BaseFragment<GoodsPresenter> implements GoodsC
     private RecyclerView homeGoodsRv;
     private SmartRefreshLayout homeRefresh;
     private LinearLayout homeQuery;
+    private TextView homeLive;
+    private MyRecyclerView homeRvOne;
 
     @Override
     public int bindLayout() {
@@ -83,7 +92,7 @@ public class HomeFragment extends BaseFragment<GoodsPresenter> implements GoodsC
         homeSearch = (EditText) getViewById(R.id.home_search);
         homeScan = (ImageView) getViewById(R.id.home_scan);
         bannerView = (BannerViewPager) getViewById(R.id.banner_view);
-        homeRvOne = (RecyclerView) getViewById(R.id.home_rv_one);
+        homeRvOne = getViewById(R.id.home_rv_one);
         homeTextBannerView = (TextBannerView) getViewById(R.id.home_textBannerView);
         bannerViewTwo = (BannerViewPager) getViewById(R.id.banner_view_two);
         homeGoodsRv = (RecyclerView) getViewById(R.id.home_goods_rv);
@@ -107,6 +116,7 @@ public class HomeFragment extends BaseFragment<GoodsPresenter> implements GoodsC
                 .setRevealWidth(getResources().getDimensionPixelOffset(R.dimen.dp_40))//一屏多页模式下两边item漏出的宽度
                 .create();
         homeRvOne.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL));
+        homeLive = getViewById(R.id.home_live);
     }
 
     @Override
@@ -138,6 +148,17 @@ public class HomeFragment extends BaseFragment<GoodsPresenter> implements GoodsC
             }
         });
         mPresenter.getGoods(1, 10);
+        //直播推拉流
+        WatchLive();
+    }
+
+    private void WatchLive() {
+        homeLive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), LiveActivity.class));
+            }
+        });
     }
 
 
@@ -209,17 +230,23 @@ public class HomeFragment extends BaseFragment<GoodsPresenter> implements GoodsC
         homeRefresh.finishRefresh();
         homeRefresh.finishLoadMore();
         homeQuery.setVisibility(View.VISIBLE);
+        SpUtils instance = SpUtils.getInstance("login.xml", Context.MODE_PRIVATE, getContext());
         if (goodsAdapter == null) {
             goodsAdapter = new GoodsAdapter(dataBeans);
             homeGoodsRv.setAdapter(goodsAdapter);
             goodsAdapter.setOnItemClickListener(new OnItemClickListener() {
                 @Override
                 public void onItemClick(@NonNull BaseQuickAdapter adapter, @NonNull View view, int position) {
-                    Intent intent = new Intent(getActivity(), GoodsItemActivity.class);
-                    intent.putExtra("pic",dataBeans.get(position).getPictUrl());
-                    intent.putExtra("text",dataBeans.get(position).getTitle());
-                    intent.putExtra("price",dataBeans.get(position).getReservePrice());
-                    startActivity(intent);
+                    boolean islogin = (boolean) instance.get("islogin", false);
+                    if (islogin){
+                        Intent intent = new Intent(getActivity(), GoodsItemActivity.class);
+                        intent.putExtra("pic", dataBeans.get(position).getPictUrl());
+                        intent.putExtra("text", dataBeans.get(position).getTitle());
+                        intent.putExtra("price", dataBeans.get(position).getReservePrice());
+                        startActivity(intent);
+                    }else {
+                        ARouter.getInstance().build(ARouterActivityPath.Login.PAGER_LOGIN).navigation();
+                    }
                 }
             });
         } else {
@@ -242,10 +269,10 @@ public class HomeFragment extends BaseFragment<GoodsPresenter> implements GoodsC
     @Override
     public void onRefresh(@NonNull RefreshLayout refreshLayout) {
         homeQuery.setVisibility(View.GONE);
-        mHnadler.postDelayed(this::refresh,3000);
+        mHnadler.postDelayed(this::refresh, 3000);
     }
 
-    public void refresh(){
+    public void refresh() {
         isRefresh = true;
         page = 1;
         mPresenter.getGoods(page, 10);

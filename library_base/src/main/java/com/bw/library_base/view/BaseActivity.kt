@@ -8,7 +8,7 @@ import com.bw.library_base.presenter.IPresenter
 
 abstract class BaseActivity<P:IPresenter> : AppCompatActivity(),IActivity,IView {
 
-    lateinit var mPresenter:P
+    lateinit var mPresenter: P
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +19,6 @@ abstract class BaseActivity<P:IPresenter> : AppCompatActivity(),IActivity,IView 
 
     override fun onDestroy() {
         super.onDestroy()
-
     }
 
 }

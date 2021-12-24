@@ -5,11 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.bw.library_base.model.BaseModel
+import com.bw.library_base.presenter.BasePresenter
 import com.bw.library_base.presenter.IPresenter
 
 abstract class BaseFragment<P:IPresenter> : Fragment(),IFragment,IView{
 
-    lateinit var mPresenter:P
+    lateinit var mPresenter: P
     lateinit var mView:View
 
     override fun onCreateView(
@@ -34,9 +36,6 @@ abstract class BaseFragment<P:IPresenter> : Fragment(),IFragment,IView{
 
     override fun onDestroy() {
         super.onDestroy()
-        if (mPresenter != null){
-            mPresenter.destroy()
-        }
     }
 
 

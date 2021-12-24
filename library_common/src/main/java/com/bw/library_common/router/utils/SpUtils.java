@@ -3,8 +3,6 @@ package com.bw.library_common.router.utils;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.blankj.utilcode.util.SPUtils;
-
 /**
  *
  */
@@ -53,7 +51,7 @@ public class SpUtils {
     }
 
     //取值
-    public Object get(String key,Object defValue){
+    public Object get(String key, Object defValue){
         String type = defValue.getClass().getSimpleName();
         if("Integer".equals(type)){
             return sharedPreferences.getInt(key,(Integer)defValue);
