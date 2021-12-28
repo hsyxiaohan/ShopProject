@@ -13,6 +13,7 @@ android {
 
 dependencies {
 
+
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     kapt "androidx.room:room-compiler:2.2.3"
     implementation project(path: ':library_common')

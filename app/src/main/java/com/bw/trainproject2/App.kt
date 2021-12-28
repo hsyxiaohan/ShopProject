@@ -1,7 +1,9 @@
 package com.bw.trainproject2
 
 import android.app.Application
+import cn.jpush.android.api.JPushInterface
 import com.alibaba.android.arouter.launcher.ARouter
+import com.tencent.bugly.Bugly
 import com.tencent.rtmp.TXLiveBase
 import io.rong.imkit.RongIM
 
@@ -20,6 +22,9 @@ class App : Application() {
         TXLiveBase.getInstance().setLicence(this, licenceURL, licenceKey)
         val appKey = "vnroth0kvoako"
         RongIM.init(this, appKey)
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
+        Bugly.init(getApplicationContext(), "c8ffd643f8", false);
     }
 
 }

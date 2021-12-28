@@ -10,6 +10,7 @@ dependencyResolutionManagement {
         }
         jcenter() // Warning: this repository is going to shut down soon
         maven {url "https://maven.rongcloud.cn/repository/maven-releases/"}
+
     }
 }
 rootProject.name = "TrainProject2"
@@ -26,3 +27,4 @@ include ':library_network'
 include ':library_stroage'
 include ':library_pay'
 include ':module_user'
+
